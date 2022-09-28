@@ -1,0 +1,139 @@
+2022-09-28 11:17:42.284  INFO 101594 --- [main] org.example.fis.Application              : Starting Application using Java 1.8.0_345 on gchub00 with PID 101594 (/home/gulench/camel/fuse711-spring-boot/target/classes started by gulench in /home/gulench/camel/fuse711-spring-boot)
+2022-09-28 11:17:42.286  INFO 101594 --- [main] org.example.fis.Application              : No active profile set, falling back to 1 default profile: "default"
+2022-09-28 11:17:43.409  INFO 101594 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.apache.camel.spring.boot.CamelAutoConfiguration' of type [org.apache.camel.spring.boot.CamelAutoConfiguration$$EnhancerBySpringCGLIB$$c00e5d00] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-09-28 11:17:43.528  WARN 101594 --- [main] io.undertow.websockets.jsr               : UT026010: Buffer pool was not set on WebSocketDeploymentInfo, the default pool will be used
+2022-09-28 11:17:43.537  INFO 101594 --- [main] io.undertow.servlet                      : Initializing Spring embedded WebApplicationContext
+2022-09-28 11:17:43.537  INFO 101594 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1219 ms
+2022-09-28 11:17:43.652  INFO 101594 --- [main] o.a.c.i.converter.DefaultTypeConverter   : Type converters loaded (core: 195, classpath: 1)
+2022-09-28 11:17:44.083  INFO 101594 --- [main] io.undertow                              : starting server: Undertow - 2.2.17.SP4-redhat-00001
+2022-09-28 11:17:44.087  INFO 101594 --- [main] org.xnio                                 : XNIO version 3.8.7.SP1-redhat-00001
+2022-09-28 11:17:44.091  INFO 101594 --- [main] org.xnio.nio                             : XNIO NIO Implementation Version 3.8.7.SP1-redhat-00001
+2022-09-28 11:17:44.153  INFO 101594 --- [main] org.jboss.threads                        : JBoss Threads version 3.1.0.Final
+2022-09-28 11:17:44.201  INFO 101594 --- [main] o.s.b.w.e.undertow.UndertowWebServer     : Undertow started on port(s) 8080 (http)
+2022-09-28 11:17:44.204  INFO 101594 --- [main] o.a.camel.spring.boot.RoutesCollector    : Loading additional Camel XML routes from: classpath:camel/*.xml
+2022-09-28 11:17:44.205  INFO 101594 --- [main] o.a.camel.spring.boot.RoutesCollector    : Loading additional Camel XML rests from: classpath:camel-rest/*.xml
+2022-09-28 11:17:44.212  INFO 101594 --- [main] o.a.camel.spring.SpringCamelContext      : Apache Camel 2.23.2.fuse-7_11_0-00037-redhat-00001 (CamelContext: MyCamel) is starting
+2022-09-28 11:17:44.213  INFO 101594 --- [main] o.a.camel.spring.SpringCamelContext      : StreamCaching is enabled on CamelContext: MyCamel
+2022-09-28 11:17:44.213  INFO 101594 --- [main] o.a.camel.spring.SpringCamelContext      : Tracing is enabled on CamelContext: MyCamel
+2022-09-28 11:17:44.218  INFO 101594 --- [main] o.a.c.m.ManagedManagementStrategy        : JMX is enabled
+2022-09-28 11:17:44.335  INFO 101594 --- [main] o.a.c.impl.DefaultStreamCachingStrategy  : StreamCaching in use with spool directory: /tmp/camel/camel-tmp-d381861d-9a68-4d2d-a28e-53acc91b36dd and rules: [Spool > 128K body size]
+2022-09-28 11:17:44.390  INFO 101594 --- [main] o.a.c.component.quartz2.QuartzComponent  : Setting org.quartz.scheduler.jmx.export=true to ensure QuartzScheduler(s) will be enlisted in JMX.
+2022-09-28 11:17:44.391  INFO 101594 --- [main] o.a.c.component.quartz2.QuartzComponent  : Create and initializing scheduler.
+2022-09-28 11:17:44.399  INFO 101594 --- [main] org.quartz.impl.StdSchedulerFactory      : Using default implementation for ThreadExecutor
+2022-09-28 11:17:44.400  INFO 101594 --- [main] org.quartz.simpl.SimpleThreadPool        : Job execution threads will use class loader of thread: main
+2022-09-28 11:17:44.417  INFO 101594 --- [main] org.quartz.core.SchedulerSignalerImpl    : Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2022-09-28 11:17:44.417  INFO 101594 --- [main] org.quartz.core.QuartzScheduler          : Quartz Scheduler v.2.3.2 created.
+2022-09-28 11:17:44.418  INFO 101594 --- [main] org.quartz.simpl.RAMJobStore             : RAMJobStore initialized.
+2022-09-28 11:17:44.421  INFO 101594 --- [main] org.quartz.core.QuartzScheduler          : Scheduler meta-data: Quartz Scheduler (v2.3.2) 'DefaultQuartzScheduler-MyCamel' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2022-09-28 11:17:44.421  INFO 101594 --- [main] org.quartz.impl.StdSchedulerFactory      : Quartz scheduler 'DefaultQuartzScheduler-MyCamel' initialized from an externally provided properties instance.
+2022-09-28 11:17:44.421  INFO 101594 --- [main] org.quartz.impl.StdSchedulerFactory      : Quartz scheduler version: 2.3.2
+2022-09-28 11:17:44.429  INFO 101594 --- [main] p.q.QuartzScheduledPollConsumerScheduler : Job QuartzScheduledPollConsumerScheduler.trigger-ID-gchub00-1664363863607-0-1 (triggerType=CronTriggerImpl, jobClass=QuartzScheduledPollConsumerJob) is scheduled. Next fire date is Wed Sep 28 11:18:00 UTC 2022
+2022-09-28 11:17:44.434  INFO 101594 --- [main] o.a.c.c.file.remote.SftpOperations       : Known host file not configured, using user known host file: /home/gulench/.ssh/known_hosts
+2022-09-28 11:17:45.076  INFO 101594 --- [main] o.a.camel.spring.SpringCamelContext      : Route: sftp-route started and consuming from: sftp://localhost:22/camel/test-input?delete=true&privateKeyFile=%2Fhome%2Fgulench%2F.ssh%2Fgchub00_key.pem&scheduler=quartz2&scheduler.cron=0+0%2F1+*+1%2F1+*+%3F+*&sortBy=file%3Aname&streamDownload=true&username=gulench
+2022-09-28 11:17:45.077  INFO 101594 --- [main] o.a.c.component.quartz2.QuartzComponent  : Starting scheduler.
+2022-09-28 11:17:45.077  INFO 101594 --- [main] org.quartz.core.QuartzScheduler          : Scheduler DefaultQuartzScheduler-MyCamel_$_NON_CLUSTERED started.
+2022-09-28 11:17:45.077  INFO 101594 --- [main] o.a.camel.spring.SpringCamelContext      : Total 1 routes, of which 1 are started
+2022-09-28 11:17:45.078  INFO 101594 --- [main] o.a.camel.spring.SpringCamelContext      : Apache Camel 2.23.2.fuse-7_11_0-00037-redhat-00001 (CamelContext: MyCamel) started in 0.865 seconds
+2022-09-28 11:17:45.087  INFO 101594 --- [main] org.example.fis.Application              : Started Application in 3.126 seconds (JVM running for 3.463)
+2022-09-28 11:18:00.026  INFO 101594 --- [DefaultQuartzScheduler-MyCamel_Worker-1] o.a.camel.processor.interceptor.Tracer   : >>> (sftp-route) from(sftp://localhost:22/camel/test-input?delete=true&privateKeyFile=%2Fhome%2Fgulench%2F.ssh%2Fgchub00_key.pem&scheduler=quartz2&scheduler.cron=0+0%2F1+*+1%2F1+*+%3F+*&sortBy=file%3Aname&streamDownload=true&username=gulench) --> setProperty[CamelCharsetName, US-ASCII] <<< Pattern:InOnly, Properties:{CamelBatchSize=1, CamelMessageHistory=[DefaultMessageHistory[routeId=sftp-route, node=setProperty1]], CamelBatchComplete=true, CamelExternalRedelivered=false, CamelBatchIndex=0, CamelFileExchangeFile=RemoteFile[file-001], CamelCreatedTimestamp=Wed Sep 28 11:18:00 UTC 2022}, Headers:{breadcrumbId=ID-gchub00-1664363863607-0-2, CamelFileAbsolute=false, CamelFileAbsolutePath=camel/test-input/file-001, CamelFileHost=localhost, CamelFileLastModified=1664360634000, CamelFileLength=48, CamelFileName=file-001, CamelFileNameConsumed=file-001, CamelFileNameOnly=file-001, CamelFileParent=camel/test-input, CamelFilePath=camel/test-input/file-001, CamelFileRelativePath=file-001, CamelFtpReplyCode=0, CamelFtpReplyString=OK, CamelRemoteFileInputStream=com.jcraft.jsch.ChannelSftp$2@4637221e}, BodyType:org.apache.camel.converter.stream.InputStreamCache, Body:[Body is instance of org.apache.camel.StreamCache]
+2022-09-28 11:18:00.027  INFO 101594 --- [DefaultQuartzScheduler-MyCamel_Worker-1] o.a.camel.processor.interceptor.Tracer   : >>> (sftp-route) setProperty[CamelCharsetName, US-ASCII] --> log[>>> ${header.CamelFileName}:] <<< Pattern:InOnly, Properties:{CamelBatchSize=1, CamelCharsetName=US-ASCII, CamelMessageHistory=[DefaultMessageHistory[routeId=sftp-route, node=setProperty1], DefaultMessageHistory[routeId=sftp-route, node=log1]], CamelBatchComplete=true, CamelExternalRedelivered=false, CamelBatchIndex=0, CamelFileExchangeFile=RemoteFile[file-001], CamelCreatedTimestamp=Wed Sep 28 11:18:00 UTC 2022}, Headers:{breadcrumbId=ID-gchub00-1664363863607-0-2, CamelFileAbsolute=false, CamelFileAbsolutePath=camel/test-input/file-001, CamelFileHost=localhost, CamelFileLastModified=1664360634000, CamelFileLength=48, CamelFileName=file-001, CamelFileNameConsumed=file-001, CamelFileNameOnly=file-001, CamelFileParent=camel/test-input, CamelFilePath=camel/test-input/file-001, CamelFileRelativePath=file-001, CamelFtpReplyCode=0, CamelFtpReplyString=OK, CamelRemoteFileInputStream=com.jcraft.jsch.ChannelSftp$2@4637221e}, BodyType:org.apache.camel.converter.stream.InputStreamCache, Body:[Body is instance of org.apache.camel.StreamCache]
+2022-09-28 11:18:00.028  INFO 101594 --- [DefaultQuartzScheduler-MyCamel_Worker-1] sftp-route                               : >>> file-001:
+2022-09-28 11:18:00.028  INFO 101594 --- [DefaultQuartzScheduler-MyCamel_Worker-1] o.a.camel.processor.interceptor.Tracer   : >>> (sftp-route) log[>>> ${header.CamelFileName}:] --> split[tokenize(body, \r\n)] <<< Pattern:InOnly, Properties:{CamelBatchSize=1, CamelCharsetName=US-ASCII, CamelMessageHistory=[DefaultMessageHistory[routeId=sftp-route, node=setProperty1], DefaultMessageHistory[routeId=sftp-route, node=log1], DefaultMessageHistory[routeId=sftp-route, node=split1]], CamelBatchComplete=true, CamelExternalRedelivered=false, CamelBatchIndex=0, CamelFileExchangeFile=RemoteFile[file-001], CamelCreatedTimestamp=Wed Sep 28 11:18:00 UTC 2022}, Headers:{breadcrumbId=ID-gchub00-1664363863607-0-2, CamelFileAbsolute=false, CamelFileAbsolutePath=camel/test-input/file-001, CamelFileHost=localhost, CamelFileLastModified=1664360634000, CamelFileLength=48, CamelFileName=file-001, CamelFileNameConsumed=file-001, CamelFileNameOnly=file-001, CamelFileParent=camel/test-input, CamelFilePath=camel/test-input/file-001, CamelFileRelativePath=file-001, CamelFtpReplyCode=0, CamelFtpReplyString=OK, CamelRemoteFileInputStream=com.jcraft.jsch.ChannelSftp$2@4637221e}, BodyType:org.apache.camel.converter.stream.InputStreamCache, Body:[Body is instance of org.apache.camel.StreamCache]
+2022-09-28 11:18:00.032  WARN 101594 --- [DefaultQuartzScheduler-MyCamel_Worker-1] o.a.camel.processor.MulticastProcessor   : Cannot close: pairs. Reason: Input length = 1
+
+java.nio.charset.MalformedInputException: Input length = 1
+	at java.nio.charset.CoderResult.throwException(CoderResult.java:281) ~[na:1.8.0_345]
+	at sun.nio.cs.StreamDecoder.implRead(StreamDecoder.java:339) ~[na:1.8.0_345]
+	at sun.nio.cs.StreamDecoder.read(StreamDecoder.java:178) ~[na:1.8.0_345]
+	at java.io.InputStreamReader.read(InputStreamReader.java:184) ~[na:1.8.0_345]
+	at java.io.Reader.read(Reader.java:100) ~[na:1.8.0_345]
+	at org.apache.camel.util.Scanner.readMore(Scanner.java:154) ~[camel-core-2.23.2.fuse-7_11_0-00037-redhat-00001.jar:2.23.2.fuse-7_11_0-00037-redhat-00001]
+	at org.apache.camel.util.Scanner.hasNext(Scanner.java:112) ~[camel-core-2.23.2.fuse-7_11_0-00037-redhat-00001.jar:2.23.2.fuse-7_11_0-00037-redhat-00001]
+	at org.apache.camel.processor.Splitter$SplitterIterable$1.hasNext(Splitter.java:188) ~[camel-core-2.23.2.fuse-7_11_0-00037-redhat-00001.jar:2.23.2.fuse-7_11_0-00037-redhat-00001]
+	at org.apache.camel.processor.MulticastProcessor.doProcessSequential(MulticastProcessor.java:629) ~[camel-core-2.23.2.fuse-7_11_0-00037-redhat-00001.jar:2.23.2.fuse-7_11_0-00037-redhat-00001]
+	at org.apache.camel.processor.MulticastProcessor.process(MulticastProcessor.java:248) ~[camel-core-2.23.2.fuse-7_11_0-00037-redhat-00001.jar:2.23.2.fuse-7_11_0-00037-redhat-00001]
+	at org.apache.camel.processor.Splitter.process(Splitter.java:129) [camel-core-2.23.2.fuse-7_11_0-00037-redhat-00001.jar:2.23.2.fuse-7_11_0-00037-redhat-00001]
+	at org.apache.camel.processor.interceptor.TraceInterceptor.process(TraceInterceptor.java:181) [camel-core-2.23.2.fuse-7_11_0-00037-redhat-00001.jar:2.23.2.fuse-7_11_0-00037-redhat-00001]
+	at org.apache.camel.processor.RedeliveryErrorHandler.process(RedeliveryErrorHandler.java:548) [camel-core-2.23.2.fuse-7_11_0-00037-redhat-00001.jar:2.23.2.fuse-7_11_0-00037-redhat-00001]
+	at org.apache.camel.processor.CamelInternalProcessor.process(CamelInternalProcessor.java:201) [camel-core-2.23.2.fuse-7_11_0-00037-redhat-00001.jar:2.23.2.fuse-7_11_0-00037-redhat-00001]
+	at org.apache.camel.processor.Pipeline.process(Pipeline.java:138) [camel-core-2.23.2.fuse-7_11_0-00037-redhat-00001.jar:2.23.2.fuse-7_11_0-00037-redhat-00001]
+	at org.apache.camel.processor.Pipeline.process(Pipeline.java:101) [camel-core-2.23.2.fuse-7_11_0-00037-redhat-00001.jar:2.23.2.fuse-7_11_0-00037-redhat-00001]
+	at org.apache.camel.util.AsyncProcessorHelper.process(AsyncProcessorHelper.java:109) [camel-core-2.23.2.fuse-7_11_0-00037-redhat-00001.jar:2.23.2.fuse-7_11_0-00037-redhat-00001]
+	at org.apache.camel.processor.Pipeline.process(Pipeline.java:80) [camel-core-2.23.2.fuse-7_11_0-00037-redhat-00001.jar:2.23.2.fuse-7_11_0-00037-redhat-00001]
+	at org.apache.camel.processor.CamelInternalProcessor.process(CamelInternalProcessor.java:176) [camel-core-2.23.2.fuse-7_11_0-00037-redhat-00001.jar:2.23.2.fuse-7_11_0-00037-redhat-00001]
+	at org.apache.camel.component.file.GenericFileConsumer.processExchange(GenericFileConsumer.java:452) [camel-core-2.23.2.fuse-7_11_0-00037-redhat-00001.jar:2.23.2.fuse-7_11_0-00037-redhat-00001]
+	at org.apache.camel.component.file.remote.RemoteFileConsumer.processExchange(RemoteFileConsumer.java:133) [camel-ftp-2.23.2.fuse-7_11_0-00037-redhat-00001.jar:2.23.2.fuse-7_11_0-00037-redhat-00001]
+	at org.apache.camel.component.file.GenericFileConsumer.processBatch(GenericFileConsumer.java:221) [camel-core-2.23.2.fuse-7_11_0-00037-redhat-00001.jar:2.23.2.fuse-7_11_0-00037-redhat-00001]
+	at org.apache.camel.component.file.GenericFileConsumer.poll(GenericFileConsumer.java:185) [camel-core-2.23.2.fuse-7_11_0-00037-redhat-00001.jar:2.23.2.fuse-7_11_0-00037-redhat-00001]
+	at org.apache.camel.impl.ScheduledPollConsumer.doRun(ScheduledPollConsumer.java:174) [camel-core-2.23.2.fuse-7_11_0-00037-redhat-00001.jar:2.23.2.fuse-7_11_0-00037-redhat-00001]
+	at org.apache.camel.impl.ScheduledPollConsumer.run(ScheduledPollConsumer.java:101) [camel-core-2.23.2.fuse-7_11_0-00037-redhat-00001.jar:2.23.2.fuse-7_11_0-00037-redhat-00001]
+	at org.apache.camel.pollconsumer.quartz2.QuartzScheduledPollConsumerJob.execute(QuartzScheduledPollConsumerJob.java:61) [camel-quartz2-2.23.2.fuse-7_11_0-00037-redhat-00001.jar:2.23.2.fuse-7_11_0-00037-redhat-00001]
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202) [quartz-2.3.2.jar:na]
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573) [quartz-2.3.2.jar:na]
+
+2022-09-28 11:18:00.034 ERROR 101594 --- [DefaultQuartzScheduler-MyCamel_Worker-1] o.a.camel.processor.DefaultErrorHandler  : Failed delivery for (MessageId: ID-gchub00-1664363863607-0-3 on ExchangeId: ID-gchub00-1664363863607-0-2). Exhausted after delivery attempt: 1 caught: org.apache.camel.RuntimeCamelException: Scanner aborted because of an IOException!
+
+Message History
+---------------------------------------------------------------------------------------------------------------------------------------
+RouteId              ProcessorId          Processor                                                                        Elapsed (ms)
+[sftp-route        ] [sftp-route        ] [sftp://localhost:22/camel/test-input?delete=true&privateKeyFile=%2Fhome%2Fgule] [        14]
+[sftp-route        ] [setProperty1      ] [setProperty[Exchange.CHARSET_NAME]                                            ] [         3]
+[sftp-route        ] [log1              ] [log                                                                           ] [         1]
+[sftp-route        ] [split1            ] [split[tokenize{body() using token: \r\n}]                                     ] [         5]
+
+Stacktrace
+---------------------------------------------------------------------------------------------------------------------------------------
+
+org.apache.camel.RuntimeCamelException: Scanner aborted because of an IOException!
+	at org.apache.camel.processor.Splitter$SplitterIterable$1.hasNext(Splitter.java:196) ~[camel-core-2.23.2.fuse-7_11_0-00037-redhat-00001.jar:2.23.2.fuse-7_11_0-00037-redhat-00001]
+	at org.apache.camel.processor.MulticastProcessor.doProcessSequential(MulticastProcessor.java:629) ~[camel-core-2.23.2.fuse-7_11_0-00037-redhat-00001.jar:2.23.2.fuse-7_11_0-00037-redhat-00001]
+	at org.apache.camel.processor.MulticastProcessor.process(MulticastProcessor.java:248) ~[camel-core-2.23.2.fuse-7_11_0-00037-redhat-00001.jar:2.23.2.fuse-7_11_0-00037-redhat-00001]
+	at org.apache.camel.processor.Splitter.process(Splitter.java:129) ~[camel-core-2.23.2.fuse-7_11_0-00037-redhat-00001.jar:2.23.2.fuse-7_11_0-00037-redhat-00001]
+	at org.apache.camel.processor.interceptor.TraceInterceptor.process(TraceInterceptor.java:181) ~[camel-core-2.23.2.fuse-7_11_0-00037-redhat-00001.jar:2.23.2.fuse-7_11_0-00037-redhat-00001]
+	at org.apache.camel.processor.RedeliveryErrorHandler.process(RedeliveryErrorHandler.java:548) ~[camel-core-2.23.2.fuse-7_11_0-00037-redhat-00001.jar:2.23.2.fuse-7_11_0-00037-redhat-00001]
+	at org.apache.camel.processor.CamelInternalProcessor.process(CamelInternalProcessor.java:201) [camel-core-2.23.2.fuse-7_11_0-00037-redhat-00001.jar:2.23.2.fuse-7_11_0-00037-redhat-00001]
+	at org.apache.camel.processor.Pipeline.process(Pipeline.java:138) [camel-core-2.23.2.fuse-7_11_0-00037-redhat-00001.jar:2.23.2.fuse-7_11_0-00037-redhat-00001]
+	at org.apache.camel.processor.Pipeline.process(Pipeline.java:101) [camel-core-2.23.2.fuse-7_11_0-00037-redhat-00001.jar:2.23.2.fuse-7_11_0-00037-redhat-00001]
+	at org.apache.camel.util.AsyncProcessorHelper.process(AsyncProcessorHelper.java:109) [camel-core-2.23.2.fuse-7_11_0-00037-redhat-00001.jar:2.23.2.fuse-7_11_0-00037-redhat-00001]
+	at org.apache.camel.processor.Pipeline.process(Pipeline.java:80) [camel-core-2.23.2.fuse-7_11_0-00037-redhat-00001.jar:2.23.2.fuse-7_11_0-00037-redhat-00001]
+	at org.apache.camel.processor.CamelInternalProcessor.process(CamelInternalProcessor.java:176) [camel-core-2.23.2.fuse-7_11_0-00037-redhat-00001.jar:2.23.2.fuse-7_11_0-00037-redhat-00001]
+	at org.apache.camel.component.file.GenericFileConsumer.processExchange(GenericFileConsumer.java:452) [camel-core-2.23.2.fuse-7_11_0-00037-redhat-00001.jar:2.23.2.fuse-7_11_0-00037-redhat-00001]
+	at org.apache.camel.component.file.remote.RemoteFileConsumer.processExchange(RemoteFileConsumer.java:133) [camel-ftp-2.23.2.fuse-7_11_0-00037-redhat-00001.jar:2.23.2.fuse-7_11_0-00037-redhat-00001]
+	at org.apache.camel.component.file.GenericFileConsumer.processBatch(GenericFileConsumer.java:221) [camel-core-2.23.2.fuse-7_11_0-00037-redhat-00001.jar:2.23.2.fuse-7_11_0-00037-redhat-00001]
+	at org.apache.camel.component.file.GenericFileConsumer.poll(GenericFileConsumer.java:185) [camel-core-2.23.2.fuse-7_11_0-00037-redhat-00001.jar:2.23.2.fuse-7_11_0-00037-redhat-00001]
+	at org.apache.camel.impl.ScheduledPollConsumer.doRun(ScheduledPollConsumer.java:174) [camel-core-2.23.2.fuse-7_11_0-00037-redhat-00001.jar:2.23.2.fuse-7_11_0-00037-redhat-00001]
+	at org.apache.camel.impl.ScheduledPollConsumer.run(ScheduledPollConsumer.java:101) [camel-core-2.23.2.fuse-7_11_0-00037-redhat-00001.jar:2.23.2.fuse-7_11_0-00037-redhat-00001]
+	at org.apache.camel.pollconsumer.quartz2.QuartzScheduledPollConsumerJob.execute(QuartzScheduledPollConsumerJob.java:61) [camel-quartz2-2.23.2.fuse-7_11_0-00037-redhat-00001.jar:2.23.2.fuse-7_11_0-00037-redhat-00001]
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:202) [quartz-2.3.2.jar:na]
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:573) [quartz-2.3.2.jar:na]
+Caused by: java.nio.charset.MalformedInputException: Input length = 1
+	at java.nio.charset.CoderResult.throwException(CoderResult.java:281) ~[na:1.8.0_345]
+	at sun.nio.cs.StreamDecoder.implRead(StreamDecoder.java:339) ~[na:1.8.0_345]
+	at sun.nio.cs.StreamDecoder.read(StreamDecoder.java:178) ~[na:1.8.0_345]
+	at java.io.InputStreamReader.read(InputStreamReader.java:184) ~[na:1.8.0_345]
+	at java.io.Reader.read(Reader.java:100) ~[na:1.8.0_345]
+	at org.apache.camel.util.Scanner.readMore(Scanner.java:154) ~[camel-core-2.23.2.fuse-7_11_0-00037-redhat-00001.jar:2.23.2.fuse-7_11_0-00037-redhat-00001]
+	at org.apache.camel.util.Scanner.hasNext(Scanner.java:112) ~[camel-core-2.23.2.fuse-7_11_0-00037-redhat-00001.jar:2.23.2.fuse-7_11_0-00037-redhat-00001]
+	at org.apache.camel.processor.Splitter$SplitterIterable$1.hasNext(Splitter.java:188) ~[camel-core-2.23.2.fuse-7_11_0-00037-redhat-00001.jar:2.23.2.fuse-7_11_0-00037-redhat-00001]
+	... 20 common frames omitted
+
+2022-09-28 11:18:00.035  WARN 101594 --- [DefaultQuartzScheduler-MyCamel_Worker-1] o.a.c.c.file.GenericFileOnCompletion     : Rollback file strategy: org.apache.camel.component.file.strategy.GenericFileDeleteProcessStrategy@5b4a797f for file: RemoteFile[file-001]
+2022-09-28 11:18:05.152  INFO 101594 --- [SpringApplicationShutdownHook] o.a.camel.spring.SpringCamelContext      : Apache Camel 2.23.2.fuse-7_11_0-00037-redhat-00001 (CamelContext: MyCamel) is shutting down
+2022-09-28 11:18:05.153  INFO 101594 --- [SpringApplicationShutdownHook] o.a.camel.impl.DefaultShutdownStrategy   : Starting to graceful shutdown 1 routes (timeout 300 seconds)
+2022-09-28 11:18:05.157  INFO 101594 --- [Camel (MyCamel) thread #1 - ShutdownTask] o.a.camel.impl.DefaultShutdownStrategy   : Route: sftp-route shutdown complete, was consuming from: sftp://localhost:22/camel/test-input?delete=true&privateKeyFile=%2Fhome%2Fgulench%2F.ssh%2Fgchub00_key.pem&scheduler=quartz2&scheduler.cron=0+0%2F1+*+1%2F1+*+%3F+*&sortBy=file%3Aname&streamDownload=true&username=gulench
+2022-09-28 11:18:05.157  INFO 101594 --- [SpringApplicationShutdownHook] o.a.camel.impl.DefaultShutdownStrategy   : Graceful shutdown of 1 routes completed in 0 seconds
+2022-09-28 11:18:05.160  INFO 101594 --- [SpringApplicationShutdownHook] o.a.c.component.quartz2.QuartzComponent  : Shutting down scheduler. (will wait for all jobs to complete first.)
+2022-09-28 11:18:05.160  INFO 101594 --- [SpringApplicationShutdownHook] org.quartz.core.QuartzScheduler          : Scheduler DefaultQuartzScheduler-MyCamel_$_NON_CLUSTERED shutting down.
+2022-09-28 11:18:05.160  INFO 101594 --- [SpringApplicationShutdownHook] org.quartz.core.QuartzScheduler          : Scheduler DefaultQuartzScheduler-MyCamel_$_NON_CLUSTERED paused.
+2022-09-28 11:18:05.538  INFO 101594 --- [SpringApplicationShutdownHook] org.quartz.core.QuartzScheduler          : Scheduler unregistered from name 'quartz:type=QuartzScheduler,name=DefaultQuartzScheduler-MyCamel,instance=NON_CLUSTERED' in the local MBeanServer.
+2022-09-28 11:18:05.539  INFO 101594 --- [SpringApplicationShutdownHook] org.quartz.core.QuartzScheduler          : Scheduler DefaultQuartzScheduler-MyCamel_$_NON_CLUSTERED shutdown complete.
+2022-09-28 11:18:05.543  INFO 101594 --- [SpringApplicationShutdownHook] o.a.camel.spring.SpringCamelContext      : Apache Camel 2.23.2.fuse-7_11_0-00037-redhat-00001 (CamelContext: MyCamel) uptime 21.331 seconds
+2022-09-28 11:18:05.543  INFO 101594 --- [SpringApplicationShutdownHook] o.a.camel.spring.SpringCamelContext      : Apache Camel 2.23.2.fuse-7_11_0-00037-redhat-00001 (CamelContext: MyCamel) is shutdown in 0.391 seconds
+2022-09-28 11:18:05.543  INFO 101594 --- [SpringApplicationShutdownHook] io.undertow                              : stopping server: Undertow - 2.2.17.SP4-redhat-00001

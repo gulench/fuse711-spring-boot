@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:camel="http://camel.apache.org/schema/spring"
+       xsi:schemaLocation="
+       http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+       http://camel.apache.org/schema/spring http://camel.apache.org/schema/spring/camel-spring-2.23.2.xsd">
+
+  <bean id="traceFormatter" class="org.apache.camel.processor.interceptor.DefaultTraceFormatter">
+    <property name="showBreadCrumb" value="false" />
+    <property name="showProperties" value="true" />
+  </bean>
+
+  <!-- Define a traditional camel context here -->
+  <camelContext id="camel" xmlns="http://camel.apache.org/schema/spring" trace="true" streamCache="true">
+    <camel:endpoint id="sftp-endpoint1" uri="sftp:localhost:22/camel/test-input">
+      <camel:property key="username" value="gulench" />
+      <camel:property key="privateKeyFile" value="/home/gulench/.ssh/gchub00_key.pem" />
+
+      <!-- <camel:property key="charset" value="US-ASCII" /> -->
+      <!-- <camel:property key="binary" value="true" /> -->
+      <camel:property key="streamDownload" value="true" />
+      <!-- -->
+      <camel:property key="scheduler" value="quartz2" />
+      <camel:property key="scheduler.cron" value="0+0/1+*+1/1+*+?+*" />
+      <!-- -->
+      <camel:property key="sortBy" value="file:name" />
+      <camel:property key="delete" value="true" />
+      <!-- <camel:property key="jschLoggingLevel" value="INFO" /> -->
+    </camel:endpoint>
+
+    <camel:route id="sftp-route">
+      <camel:from id="sftp1" uri="sftp-endpoint1" />
+ 
+      <camel:setProperty propertyName="Exchange.CHARSET_NAME">
+        <camel:constant>US-ASCII</camel:constant>
+        <!-- <camel:constant>ISO-8859-1</camel:constant> -->
+        <!-- <camel:constant>UTF8</camel:constant> -->
+      </camel:setProperty>
+      
+      <camel:log message=">>> ${header.CamelFileName}:" />
+      <camel:split streaming="true">
+        <camel:tokenize token="\r\n"></camel:tokenize>
+        <camel:log message="   --- ${body}"></camel:log>
+      </camel:split>
+    </camel:route>
+
+    <!--
+    <route id="simple-route">
+      <from id="route-timer" uri="timer:foo?period=2000"/>
+      <transform id="route-transform">
+        <method ref="myTransformer"/>
+      </transform>
+      <log id="route-log" message=">>> ${body}"/>
+    </route>
+    -->
+  </camelContext>
+
+</beans>

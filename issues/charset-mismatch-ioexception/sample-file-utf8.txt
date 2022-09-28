@@ -1,0 +1,3 @@
+Line 1: ALL OK
+Line 2: Québec
+Line 3: ALL OK

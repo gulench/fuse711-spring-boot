@@ -1,0 +1,40 @@
+= Fuse 7.11 Upgrade Issues
+
+== 001: Endpoint loaded twice, leading to BeanOverrideException
+
+*Cause*: ???
+
+*Resolution*: Add the following config to the Spring `application.properties`:
+
+[source,properties]
+----
+spring.main.allow-bean-definition-overriding=true
+----
+
+== 002: Quartz Scheduler not Used when <endpoint> uri uses 'ref:' prefix
+
+*Issue Folder*: link:issues/endpoint-ref-scheduler/[]
+
+*Cause*: ???
+
+*Resolution*: Do not prefix endpoint URI references with `ref:`.
+
+== 003: Splitter component throws MalformedInputException: Input length = 1
+
+*Issue Folder*: link:issues/charset-mismatch-ioexception/[]
+
+*Cause*: There is a mismatch in the *character-set encoding* of the _file being processed_, and what the _Camel Exchange_ is using.
+
+*Resolution*: Apply appropriate value to `Exchange.CHARSET_NAME` property, as per the character-set encoding used in the file being processed.
+
+[source,xml]
+----
+...
+    <camel:route id="my-route">
+      <camel:from id="from1" uri="sftp-endpoint1" />
+ 
+      <camel:setProperty propertyName="Exchange.CHARSET_NAME">
+        <camel:constant>ISO-8859-1</camel:constant>
+      </camel:setProperty>
+...
+----
